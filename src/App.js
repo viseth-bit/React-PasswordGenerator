@@ -13,7 +13,6 @@ function PasswordGenerator() {
   const [includeLowercase, setIncludeLowercase] = useState(true);
   const [includeNumbers, setIncludeNumbers] = useState(true);
   const [includeSymbols, setIncludeSymbols] = useState(true);
-
   const handleGeneratePassword = (e) => {
     let characterList = "";
     if (includeLowercase) {
@@ -43,7 +42,7 @@ function PasswordGenerator() {
     return handleGeneratePassword();
   }, [PasswordLength]);
   return (
-    <div style={{ paddingLeft: "50px" }}>
+    <div className="App-header">
       <h2>Password Generator</h2>
 
       <div style={{ paddingLeft: "0px" }} class="input-group col-sm-5">
